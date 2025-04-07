@@ -1,79 +1,79 @@
 # 📰 Fake News Detection using Colab ML & Power BI
 
-This project demonstrates a complete pipeline for detecting fake news using **Machine Learning in Google Colab**, and visualizing insights in **Power BI**.
+This project combines **Machine Learning** (via Google Colab) and **Data Visualization** (via Power BI) to detect fake news and analyze patterns between real and fake news articles using natural language features.
 
 ---
 
-## 📌 Project Highlights
+## 📌 Project Overview
 
-- ✅ Built using **Python**, **Scikit-learn**, and **TF-IDF vectorization**
-- 🧠 Machine Learning model: **Logistic Regression**
-- 📊 Dashboard created using **Power BI Desktop**
-- 📁 Dataset: Labeled real and fake news articles
-- 🔁 Includes preprocessing, model training, prediction, and visualization
+- **Model**: Logistic Regression using TF-IDF vectorization
+- **Tooling**: Python (Google Colab), Power BI, Pandas, Scikit-learn
+- **Data**: Combined Fake and Real News dataset with 44,954 articles
+- **Output**: A predictive ML model and a Power BI dashboard for visual insights
 
 ---
 
-## 📁 Files Included
+## 🛠️ Features
+
+### 🔬 Machine Learning (Colab)
+- Preprocessing of news articles (title, text)
+- TF-IDF Vectorization
+- Model training using Logistic Regression
+- Prediction on unseen data
+- Model saved as `.pkl` for reuse
+
+### 📊 Power BI Dashboard
+- Visual comparison of Fake vs Real news
+- Top topics by frequency & authenticity
+- Timeline analysis of publishing patterns
+- Word cloud keyword analysis by label
+- Summary page with insights
+
+---
+
+## 📂 Dataset Access  
+The full `Combined_FakeNews.csv` file (100MB+) used in this project is too large to host directly on GitHub.  
+You can access and download the dataset from Google Drive here:
+
+🔗 [Download Combined_FakeNews.csv](https://drive.google.com/file/d/1bj_7iHd2qXgfK6U9Gy9QVNugACiN8UdW/view?usp=drive_link)
+
+---
+
+## 📁 Files in Repository
 
 | File | Description |
 |------|-------------|
-| `collabnews.ipynb` | Google Colab notebook with the full ML pipeline |
-| `Fake News Detection Dashboard PowerBI.pbix` | Interactive Power BI dashboard |
-| `.gitattributes` | GitHub tracking configuration |
+| `collabnews.ipynb` | Google Colab ML notebook used for training the model |
+| `Fake News Detection Dashboard PowerBI.pbix` | Power BI Dashboard |
+| `.gitattributes` | Git LFS tracking info (auto-generated) |
+| `README.md` | You're here! |
 
 ---
 
-## 🔬 Machine Learning Pipeline (Colab)
+## 🧠 Insights Extracted
 
-1. Import and clean data
-2. Convert news text into vectors using **TF-IDF**
-3. Train a **Logistic Regression** model to classify Fake vs Real news
-4. Save the model and vectorizer using `joblib`
-5. Predict on test data and export results as `.csv`
-
-➡️ Open in Colab:  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/krishnatejakotla/Fake-News-Detection-Colab-ML-PowerBI/blob/main/collabnews.ipynb)
+- About **52%** of the news was real, and **48%** fake.
+- Fake news often used attention-grabbing terms like "BREAKING", "VIDEO", "SHOCKING".
+- Real news used more neutral and location-specific language.
+- Fake news saw a significant increase after mid-2016, possibly tied to global political events.
 
 ---
 
-## 📊 Power BI Dashboard Features
+## 💼 Author
 
-- **Donut Chart** – Fake vs Real news distribution  
-- **Line Chart** – News publishing trends (2015–2018)  
-- **Bar Chart** – Top 10 topics by Fake vs Real articles  
-- **Word Clouds** – Keyword comparison in real vs fake titles  
-- **Summary Page** – High-level metrics and key findings  
+**Krishna Teja Reddy Kotla**
 
----
-
-## 🚀 How to Run This Project
-
-1. Clone or download the repository
-2. Open `collabnews.ipynb` in [Google Colab](https://colab.research.google.com/)
-3. Run all cells to generate model and predictions
-4. Open `.pbix` file in **Power BI Desktop**
-5. Explore and customize the dashboard
+- 📧 Email: krishnatejareddy.kotla@gmail.com  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/krishnatejakotla)
 
 ---
 
-## 💡 Key Takeaways
+## 🧠 Keywords
 
-- 🧾 **48% Fake news**, **52% Real news**
-- 🔥 Fake news uses dramatic words like _“BREAKING”_, _“SHOCKING”_, _“TRUMP”_
-- 📍 Real news is more factual and location-specific
-- 📈 Fake news increased significantly after **mid-2016**
+`Machine Learning` • `Fake News Detection` • `Colab` • `Python` • `TF-IDF` • `Logistic Regression` • `Power BI` • `Dashboard` • `Data Analysis` • `Natural Language Processing`
 
 ---
 
-## 🙋‍♂️ Author
+## 📌 License
 
-**Krishna Teja Reddy Kotla**  
-🎓 Master’s in MIS, Auburn University at Montgomery  
-💼 Aspiring Data Analyst | Machine Learning Enthusiast  
-🔗 [LinkedIn](https://www.linkedin.com/in/krishnatejakotla)  
-📧 Email: krishnatejareddy.kotla@gmail.com
-
----
-
-⭐ *If you found this useful, give it a ⭐ and connect with me on LinkedIn!*
+This project is open-source and free to use for educational and portfolio purposes.
